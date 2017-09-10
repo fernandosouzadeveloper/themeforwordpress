@@ -27,7 +27,7 @@
       <?php 
       	$args= array (
       		'menu'   => 'header-menu',
-      		'menu_class'   => 'navbar-nav',
+      		'menu_class'   => 'navbar-nav mr-auto',
       		'container'   => 'false'
 
       		);
@@ -35,11 +35,11 @@
 
 
       ?>
-
-
-        <form class="form-inline my-2 my-lg-0">
+      <div class="align-right">
+        <form class="form-inline">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+       </div>
       </div>
     </nav>

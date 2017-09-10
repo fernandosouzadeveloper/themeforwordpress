@@ -16,6 +16,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .admin-bar .navbar {
 	margin-top: 30px;
 }
+.jumbotron {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
 .menu-item {
 	padding: 0 15px;
 }
@@ -26,9 +30,51 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color:#FFFFFF;
 	text-decoration: none;
 }
-.current-menu-item {
+.current-menu-item > a {
+	padding: 16px 10px;
 	background: #000;
-	padding: 5px 15px;
+}
+.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;	
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;	
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
 }
 /* media query max 767px */
 
@@ -36,4 +82,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .menu-item {
 	padding: 0;
 }
+.current-menu-item > a {
+	padding: 20px 0;
+	background: none;
+	color: #fff;
+	font-weight: 600;
 }
+.menu-item {
+	padding: 5px 0;
+}
+}
+
+	
+/* media query max 992px */
+
+@media ( max-width: 992px){
+
+}
+
