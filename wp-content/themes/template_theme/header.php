@@ -10,15 +10,11 @@
 
     <title>Jumbotron Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
+    
   <?php wp_head(); ?>
   </head>
   
-  <body>
+  <body <?php body_class(); ?>>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Navbar</a>
